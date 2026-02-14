@@ -1,10 +1,7 @@
-'use client'
-
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { getWriteup } from '@/lib/writeups-data'
 import { notFound } from 'next/navigation'
-import { use } from 'react'
 import { JsonRceContent } from '@/components/writeup-content/json-rce-content'
 import { HtbFactsContent } from '@/components/writeup-content/htb-facts-content'
 import { CveContent } from '@/components/writeup-content/cve-content'
@@ -19,8 +16,20 @@ interface WriteupPageProps {
   params: Promise<{ slug: string }>
 }
 
-export default function WriteupDetailPage({ params }: WriteupPageProps) {
-  const { slug } = use(params)
+export async function generateStaticParams() {
+  return [
+    { slug: 'zinad-26-rev' },
+    { slug: 'react2shell' },
+    { slug: 'htb-facts' },
+    { slug: 'cve-2025-24071' },
+    { slug: 'android-hacking-intro' },
+    { slug: 'json-rce' },
+    { slug: 'privesc-to-application-admin' },
+  ]
+}
+
+export default async function WriteupDetailPage({ params }: WriteupPageProps) {
+  const { slug } = await params
   const writeup = getWriteup(slug)
   
   if (!writeup) {
