@@ -11,6 +11,7 @@ import { Zinad26RevContent } from '@/components/writeup-content/zinad-26-rev-con
 import { React2ShellContent } from '@/components/writeup-content/react2shell-content'
 import { DefaultContent } from '@/components/writeup-content/default-content'
 import { PinnedCodeProvider } from '@/components/pinned-code-context'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupPageProps {
   params: Promise<{ slug: string }>
@@ -65,7 +66,7 @@ export default async function WriteupDetailPage({ params }: WriteupPageProps) {
         <div 
           className="fixed inset-0 -z-10 opacity-30"
           style={{
-            backgroundImage: 'url(/background.png)',
+            backgroundImage: `url(${assetPath('/background.png')})`,
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             backgroundPosition: 'center',

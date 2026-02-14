@@ -4,6 +4,7 @@ import { Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any

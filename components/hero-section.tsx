@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Github, Linkedin } from 'lucide-react'
 import { GlitchText } from './glitch-text'
 import { useState, useRef } from 'react'
+import { assetPath } from '@/lib/asset-path'
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -149,7 +150,7 @@ export function HeroSection() {
               >
                 <div className="absolute inset-0 bg-red-500/20 rounded-lg blur-lg group-hover:blur-xl transition-all opacity-0 group-hover:opacity-100"></div>
                 <div className="relative w-12 h-12 flex items-center justify-center rounded-lg border border-red-500/30 group-hover:border-red-500 transition-colors bg-zinc-900/50">
-                  <img src="/x.png" alt="X" className="w-6 h-6 group-hover:opacity-80 transition-opacity" />
+                  <img src={assetPath('/x.png')} alt="X" className="w-6 h-6 group-hover:opacity-80 transition-opacity" />
                 </div>
               </a>
             </motion.div>

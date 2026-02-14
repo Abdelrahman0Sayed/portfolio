@@ -4,6 +4,7 @@ import { Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any
@@ -52,7 +53,7 @@ export function PrivescToApplicationAdminContent({ writeup }: WriteupContentProp
       <div className="mb-16">
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900">
           <img
-            src='/writeup-cover/privsec-to-application-admin.png'
+            src={assetPath('/writeup-cover/privsec-to-application-admin.png')}
             alt={writeup.title}
             className="w-full h-96 object-cover"
           />
@@ -110,7 +111,7 @@ export function PrivescToApplicationAdminContent({ writeup }: WriteupContentProp
 
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/PrivEsc_to_app_admin/create_request.png"
+            src={assetPath('/writeup-images/PrivEsc_to_app_admin/create_request.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -120,7 +121,7 @@ export function PrivescToApplicationAdminContent({ writeup }: WriteupContentProp
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/PrivEsc_to_app_admin/forbidden.png"
+            src={assetPath('/writeup-images/PrivEsc_to_app_admin/forbidden.png')}
             alt="Roles in the application"
             className="w-full h-auto object-cover"
           />
@@ -169,14 +170,14 @@ async def create_user(
 
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/PrivEsc_to_app_admin/create_admin.png"
+            src={assetPath('/writeup-images/PrivEsc_to_app_admin/create_admin.png')}
             alt="Mass Assignment"
             className="w-full h-auto object-cover"
           />
         </div>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/PrivEsc_to_app_admin/admin_dashboard.png"
+            src={assetPath('/writeup-images/PrivEsc_to_app_admin/admin_dashboard.png')}
             alt="Admin Role"
             className="w-full h-auto object-cover"
           />

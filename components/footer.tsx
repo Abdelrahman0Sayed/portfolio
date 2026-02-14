@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Github, Linkedin, ExternalLink } from 'lucide-react'
+import { assetPath } from '@/lib/asset-path'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -20,7 +21,7 @@ export function Footer() {
           {/* X (Twitter) */}
           <div className="card-dark p-6">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/x.png" alt="X" className="w-5 h-5" />
+              <img src={assetPath('/x.png')} alt="X" className="w-5 h-5" />
               <h3 className="text-lg font-bold text-white">X</h3>
             </div>
             <a

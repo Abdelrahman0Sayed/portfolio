@@ -4,6 +4,7 @@ import { Share2, Underline } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any
@@ -75,7 +76,7 @@ export function AndroidHackingContent({ writeup }: WriteupContentProps) {
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/android_internals.png"
+              src={assetPath('/writeup-images/android-hacking-intro/android_internals.png')}
               alt={writeup.title}
               width={900}
               height={500}
@@ -203,7 +204,7 @@ export function AndroidHackingContent({ writeup }: WriteupContentProps) {
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/android_app_components.png"
+              src={assetPath('/writeup-images/android-hacking-intro/android_app_components.png')}
               alt="Comparison function"
               className="w-full h-auto object-cover"
             />
@@ -296,7 +297,7 @@ AllSafe APK --> Application contains all vulnerabilities we want to exploit`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/jadx_gui.png"
+              src={assetPath('/writeup-images/android-hacking-intro/jadx_gui.png')}
               alt="Comparison function"
               className="w-full h-auto object-cover"
             />
@@ -307,7 +308,7 @@ AllSafe APK --> Application contains all vulnerabilities we want to exploit`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/usb_debugging.png"
+              src={assetPath('/writeup-images/android-hacking-intro/usb_debugging.png')}
               alt="Comparison function"
               className="w-full h-auto object-cover"
             />
@@ -325,7 +326,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/adb_connection.png"
+              src={assetPath('/writeup-images/android-hacking-intro/adb_connection.png')}
               alt="ADB Connection"
               className="w-full h-auto object-cover"
             />
@@ -337,7 +338,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/insecure_logging.png"
+              src={assetPath('/writeup-images/android-hacking-intro/insecure_logging.png')}
               alt="Insecure Logging"
               className="w-full h-auto object-cover"
             />
@@ -348,7 +349,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/insecure_logging_code.png"
+              src={assetPath('/writeup-images/android-hacking-intro/insecure_logging_code.png')}
               alt="Insecure Logging Code"
               className="w-full h-auto object-cover"
             />
@@ -362,7 +363,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/display_logs.png"
+              src={assetPath('/writeup-images/android-hacking-intro/display_logs.png')}
               alt="Display Logs"
               className="w-full h-auto object-cover"
             />
@@ -375,7 +376,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/hardcoded_creds.png"
+              src={assetPath('/writeup-images/android-hacking-intro/hardcoded_creds.png')}
               alt="Insecure Logging Code"
               className="w-full h-auto object-cover"
             />
@@ -392,7 +393,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/hardcoded_username.png"
+              src={assetPath('/writeup-images/android-hacking-intro/hardcoded_username.png')}
               alt="Hardcoded Username"
               className="w-full h-auto object-cover"
             />
@@ -401,7 +402,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/hardcoded_password.png"
+              src={assetPath('/writeup-images/android-hacking-intro/hardcoded_password.png')}
               alt="Hardcoded Password"
               className="w-full h-auto object-cover"
             />
@@ -411,7 +412,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/strings_xml.png"
+              src={assetPath('/writeup-images/android-hacking-intro/strings_xml.png')}
               alt="Hardcoded Password"
               className="w-full h-auto object-cover"
             />
@@ -429,7 +430,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/firebase_database.png"
+              src={assetPath('/writeup-images/android-hacking-intro/firebase_database.png')}
               alt="Hardcoded Password"
               className="w-full h-auto object-cover"
             />
@@ -439,7 +440,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/secrets_json.png"
+              src={assetPath('/writeup-images/android-hacking-intro/secrets_json.png')}
               alt="Hardcoded Password"
               className="w-full h-auto object-cover"
             />
@@ -449,7 +450,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/firebase_flag.png"
+              src={assetPath('/writeup-images/android-hacking-intro/firebase_flag.png')}
               alt="Hardcoded Password"
               className="w-full h-auto object-cover"
             />
@@ -462,7 +463,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/shared_pref_code.png"
+              src={assetPath('/writeup-images/android-hacking-intro/shared_pref_code.png')}
               alt="Insecure Shared Preferences"
               className="w-full h-auto object-cover"
             />
@@ -473,7 +474,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/shared_pref_poc.png"
+              src={assetPath('/writeup-images/android-hacking-intro/shared_pref_poc.png')}
               alt="Insecure Shared Preferences"
               className="w-full h-auto object-cover"
             />
@@ -488,7 +489,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/sqli_code.png"
+              src={assetPath('/writeup-images/android-hacking-intro/sqli_code.png')}
               alt="SQL Injection"
               className="w-full h-auto object-cover"
             />
@@ -504,7 +505,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/sqli_poc.png"
+              src={assetPath('/writeup-images/android-hacking-intro/sqli_poc.png')}
               alt="SQL Injection"
               className="w-full h-auto object-cover"
             />
@@ -519,7 +520,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/pin_bypass_hardcode.png"
+              src={assetPath('/writeup-images/android-hacking-intro/pin_bypass_hardcode.png')}
               alt="PIN Bypass"
               className="w-full h-auto object-cover"
             />
@@ -606,7 +607,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/frida_pin_bruteforce.png"
+                src={assetPath('/writeup-images/android-hacking-intro/frida_pin_bruteforce.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -629,7 +630,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/frida_pin_bypass.png"
+                src={assetPath('/writeup-images/android-hacking-intro/frida_pin_bypass.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -648,7 +649,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/frida_server.png"
+                src={assetPath('/writeup-images/android-hacking-intro/frida_server.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -660,7 +661,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/root_detection.png"
+                src={assetPath('/writeup-images/android-hacking-intro/root_detection.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -679,7 +680,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/webview_google.png"
+                src={assetPath('/writeup-images/android-hacking-intro/webview_google.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -691,7 +692,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/LFI.png"
+                src={assetPath('/writeup-images/android-hacking-intro/LFI.png')}
                 alt="PIN Bypass"
                 className="w-full h-auto object-cover"
               />
@@ -704,7 +705,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/weak_cryptography.png"
+                src={assetPath('/writeup-images/android-hacking-intro/weak_cryptography.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />
@@ -723,7 +724,7 @@ root@kali:~# adb shell`}
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/weak_crypto_frida.png"
+                src={assetPath('/writeup-images/android-hacking-intro/weak_crypto_frida.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />
@@ -790,7 +791,7 @@ if __name__ == "__main__":
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/weak_crypto_python.png"
+                src={assetPath('/writeup-images/android-hacking-intro/weak_crypto_python.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />
@@ -827,7 +828,7 @@ if __name__ == "__main__":
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/medusa_modules.png"
+                src={assetPath('/writeup-images/android-hacking-intro/medusa_modules.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />
@@ -847,7 +848,7 @@ if __name__ == "__main__":
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/medusa_output.png"
+                src={assetPath('/writeup-images/android-hacking-intro/medusa_output.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />
@@ -856,7 +857,7 @@ if __name__ == "__main__":
         <div className="mb-16">
           <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
               <img
-                src="/writeup-images/android-hacking-intro/burp_detection.png"
+                src={assetPath('/writeup-images/android-hacking-intro/burp_detection.png')}
                 alt="Weak Cryptography"
                 className="w-full h-auto object-cover"
               />

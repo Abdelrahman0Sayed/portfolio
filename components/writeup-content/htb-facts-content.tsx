@@ -4,6 +4,7 @@ import { Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any
@@ -123,7 +124,7 @@ export function HtbFactsContent({ writeup }: WriteupContentProps) {
         <p>Once we register to a new account we will notice we've assigned to a client role</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/Update_Profile.png"
+            src={assetPath('/writeup-images/HTB_Facts/Update_Profile.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -133,7 +134,7 @@ export function HtbFactsContent({ writeup }: WriteupContentProps) {
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/roles.png"
+            src={assetPath('/writeup-images/HTB_Facts/roles.png')}
             alt="Roles in the application"
             className="w-full h-auto object-cover"
           />
@@ -144,14 +145,14 @@ export function HtbFactsContent({ writeup }: WriteupContentProps) {
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/Mass_Assignment.png"
+            src={assetPath('/writeup-images/HTB_Facts/Mass_Assignment.png')}
             alt="Mass Assignment"
             className="w-full h-auto object-cover"
           />
         </div>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/admin.png"
+            src={assetPath('/writeup-images/HTB_Facts/admin.png')}
             alt="Admin Role"
             className="w-full h-auto object-cover"
           />
@@ -160,7 +161,7 @@ export function HtbFactsContent({ writeup }: WriteupContentProps) {
         <p>After some long enumeration i've found a sensitive AWS S3 Bucket Creds, so lets used and see what we gonna find.</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/aws_config.png"
+            src={assetPath('/writeup-images/HTB_Facts/aws_config.png')}
             alt="AWS S3 Bucket Credentials"
             className="w-full h-auto object-cover"
           />
@@ -188,7 +189,7 @@ export function HtbFactsContent({ writeup }: WriteupContentProps) {
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/list_buckets.png"
+            src={assetPath('/writeup-images/HTB_Facts/list_buckets.png')}
             alt="AWS S3 Bucket Credentials"
             className="w-full h-auto object-cover"
           />
@@ -214,7 +215,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash`}
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/john_crack.png"
+            src={assetPath('/writeup-images/HTB_Facts/john_crack.png')}
             alt="AWS S3 Bucket Credentials"
             className="w-full h-auto object-cover"
           />
@@ -235,7 +236,7 @@ ssh -i id_ed25519 trivia@facts.htb`}
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/user_flag.png"
+            src={assetPath('/writeup-images/HTB_Facts/user_flag.png')}
             alt="User Flag"
             className="w-full h-auto object-cover"
           />
@@ -247,7 +248,7 @@ ssh -i id_ed25519 trivia@facts.htb`}
         <p>After getting the user flag, we need to enumerate the machine for any possible privilege escalation vectors, so I ran the command sudo -l to get any sudo privileges for the user and we got a binary with sudo rights without a password.</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/sudo.png"
+            src={assetPath('/writeup-images/HTB_Facts/sudo.png')}
             alt="Sudo Rights"
             className="w-full h-auto object-cover"
           />
@@ -266,7 +267,7 @@ sudo /usr/bin/facter --custom-dir /dev/shm/pwn`}
         <p>And then we get the root shell and the root flag.</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/HTB_Facts/root_flag.png"
+            src={assetPath('/writeup-images/HTB_Facts/root_flag.png')}
             alt="Root Flag"
             className="w-full h-auto object-cover"
           />

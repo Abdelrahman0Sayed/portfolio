@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation'
 import { ExperienceSection } from '@/components/experience-section'
 import { Footer } from '@/components/footer'
+import { assetPath } from '@/lib/asset-path'
 
 export default function ExperiencePage() {
   return (
@@ -9,7 +10,7 @@ export default function ExperiencePage() {
       <div 
         className="fixed inset-0 -z-10"
         style={{
-          backgroundImage: 'url(/background.png)',
+          backgroundImage: `url(${assetPath('/background.png')})`,
           backgroundAttachment: 'fixed',
           backgroundSize: '40%',
           backgroundPosition: 'center',
