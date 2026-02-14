@@ -59,7 +59,7 @@ export const writeupsData: Record<string, WriteupContent> = {
     title: 'How JSON-JavaScript Discrepancy Leads to RCE (Lodash)',
     date: '26/01/26',
     subtitle: 'Official Writeup: gap | 0xL4ugh v5',
-    coverImage: '/images/image.png',
+    coverImage: '/placeholder-logo.png',
     tags: ['Web', 'RCE', 'JavaScript'],
     content: null,
   },

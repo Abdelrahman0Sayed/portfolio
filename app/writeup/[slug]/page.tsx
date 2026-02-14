@@ -65,7 +65,7 @@ export default async function WriteupDetailPage({ params }: WriteupPageProps) {
         <div 
           className="fixed inset-0 -z-10 opacity-30"
           style={{
-            backgroundImage: 'url(/bg-bw-low.jpg)',
+            backgroundImage: 'url(/background.png)',
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
