@@ -1,3 +1,5 @@
+'use client'
+
 import { Italic, Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
