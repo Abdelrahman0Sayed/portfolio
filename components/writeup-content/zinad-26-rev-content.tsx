@@ -4,6 +4,7 @@ import { Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any
@@ -77,7 +78,7 @@ export function Zinad26RevContent({ writeup }: WriteupContentProps) {
         <p>Browse to the entry point of the application to get the main function of the application</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/calc_entry_point.png"
+            src={assetPath('/writeup-images/zinad-26-rev/calc_entry_point.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -86,7 +87,7 @@ export function Zinad26RevContent({ writeup }: WriteupContentProps) {
         
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/calc_main_function.png"
+            src={assetPath('/writeup-images/zinad-26-rev/calc_main_function.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -186,7 +187,7 @@ print("="*60)
 
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/calc_flag.png"
+            src={assetPath('/writeup-images/zinad-26-rev/calc_flag.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -199,7 +200,7 @@ print("="*60)
 
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/broken_main_function.png"
+            src={assetPath('/writeup-images/zinad-26-rev/broken_main_function.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -262,7 +263,7 @@ print("="*60)`}
 
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/broken_flag.png"
+            src={assetPath('/writeup-images/zinad-26-rev/broken_flag.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -292,7 +293,7 @@ Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Flag is correct.`}
         <p>Lets start with the static analysis using Ghidra</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/ilovec_main_function.png"
+            src={assetPath('/writeup-images/zinad-26-rev/ilovec_main_function.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -356,7 +357,7 @@ Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Flag is correct.`}
         <p>I got the value of the expected pattern from the Bytes window (May be the pattern is the flag) by copying the 31 bytes starts at 0x00104060</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/ilovec_string_bytes.png"
+            src={assetPath('/writeup-images/zinad-26-rev/ilovec_string_bytes.png')}
             alt="String bytes"
             className="w-full h-auto object-cover"
           />
@@ -365,7 +366,7 @@ Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Wrong!!Flag is correct.`}
         <p>Now Lets analyze the Comparison function <InlineCode>FUN_00101179</InlineCode></p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/ilovec_sorting_function.png"
+            src={assetPath('/writeup-images/zinad-26-rev/ilovec_sorting_function.png')}
             alt="Comparison function"
             className="w-full h-auto object-cover"
           />
@@ -454,7 +455,7 @@ LD_PRELOAD=./trace.so ./ilovec AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`}
         <p>Output:</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/ilovec_x0r_pattern.png"
+            src={assetPath('/writeup-images/zinad-26-rev/ilovec_x0r_pattern.png')}
             alt="Comparison function"
             className="w-full h-auto object-cover"
           />
@@ -495,7 +496,7 @@ print("="*40)
 
          <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/zinad-26-rev/ilovec_flag.png"
+            src={assetPath('/writeup-images/zinad-26-rev/ilovec_flag.png')}
             alt="Comparison function"
             className="w-full h-auto object-cover"
           />

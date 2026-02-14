@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Search } from 'lucide-react'
 import Link from 'next/link'
 import { useState, useMemo } from 'react'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupCard {
   id: number
@@ -21,14 +22,14 @@ const writeups: WriteupCard[] = [
     title: 'React2Shell | CVE-2025-55182',
     date: '13/02/26',
     tags: ['Security Research', 'Web'],
-    image: '/writeup-cover/react2shell.png',
+    image: assetPath('/writeup-cover/react2shell.png'),
   },
   {id: 2,
     slug: 'zinad-26-rev',
     title: 'ZinadIT Cyber champions CTF | Reverse Engineering',
     date: '08/02/26',
     tags: ['CTF', 'Reverse Engineering'],
-    image: '/writeup-cover/zinad-26-reverse.png',
+    image: assetPath('/writeup-cover/zinad-26-reverse.png'),
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ const writeups: WriteupCard[] = [
     title: '$XXX Privilege Escalation Vulnerability Led me to be Application admin',
     date: '5/02/26',
     tags: ['Bug Hunting', 'Web', 'Privilege Escalation'],
-    image: '/writeup-cover/privsec-to-application-admin.png',
+    image: assetPath('/writeup-cover/privsec-to-application-admin.png'),
   },  
   {
     id: 4,
@@ -44,7 +45,7 @@ const writeups: WriteupCard[] = [
     title: 'HTB Season 10 | Facts Writeup',
     date: '26/01/26',
     tags: ['HackTheBox', 'Web', 'Linux'],
-    image: '/writeup-cover/HTB_Facts.png',
+    image: assetPath('/writeup-cover/HTB_Facts.png'),
   },
   {
     id: 5,
@@ -52,7 +53,7 @@ const writeups: WriteupCard[] = [
     title: 'CVE-2025-24071, File Explorer vulnerability expose the NTLM Hashes',
     date: '17/12/25',
     tags: ['Security Research', 'Network'],
-    image: '/writeup-cover/CVE-2025-24071.png',
+    image: assetPath('/writeup-cover/CVE-2025-24071.png'),
   },
   {
     id: 6,
@@ -60,7 +61,7 @@ const writeups: WriteupCard[] = [
     title: 'Introduction to Android App Hacking',
     date: '24/08/25',
     tags: ['Mobile', 'OWASP'],
-    image: '/writeup-cover/AndroidHacking.png',
+    image: assetPath('/writeup-cover/AndroidHacking.png'),
   }
 ]
 

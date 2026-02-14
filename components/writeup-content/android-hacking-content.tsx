@@ -539,7 +539,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/pin_bypass_hardcode.png"
+              src={assetPath('/writeup-images/android-hacking-intro/pin_bypass_hardcode.png')}
               alt="PIN Bypass"
               className="w-full h-auto object-cover"
             />
@@ -549,7 +549,7 @@ root@kali:~# adb shell`}
       <div className="mb-16">
         <div className="border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 mx-auto">
             <img
-              src="/writeup-images/android-hacking-intro/pin_bypass_hardcode.png"
+              src={assetPath('/writeup-images/android-hacking-intro/pin_bypass_hardcode.png')}
               alt="PIN Bypass"
               className="w-full h-auto object-cover"
             />

@@ -4,6 +4,7 @@ import { Italic, Share2 } from 'lucide-react'
 import { useState } from 'react'
 import { CodeBlock, InlineCode } from '@/components/code-block'
 import { SplitViewWrapper } from '@/components/split-view-wrapper'
+import { assetPath } from '@/lib/asset-path'
 
 interface WriteupContentProps {
   writeup: any
@@ -75,7 +76,7 @@ var func3 = Function(”<param>” , “<code>”)`}
         <div className="mb-16">
             <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900">
               <img
-                src='/writeup-images/react2shell/what_is_proto.png'
+                src={assetPath('/writeup-images/react2shell/what_is_proto.png')}
                 alt={writeup.title}
                 className="w-full h-60 object-contain"
               />
@@ -116,7 +117,7 @@ var func7 = x.__proto__.constructor.constructor("alert()")`}
               />
          <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/react2shell/alert.png"
+            src={assetPath('/writeup-images/react2shell/alert.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -185,14 +186,14 @@ var func7 = x.__proto__.constructor.constructor("alert()")`}
         <p>We've noticed in a file called <i>action-handler.ts</i> that the chunks are taken with await keyword and return the value without any checks, so to use this, we will create the function as a Thenable function</p>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/react2shell/action-handler.png"
+            src={assetPath('/writeup-images/react2shell/action-handler.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
         </div>
         <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/react2shell/thenable.png"
+            src={assetPath('/writeup-images/react2shell/thenable.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
@@ -210,7 +211,7 @@ var func7 = x.__proto__.constructor.constructor("alert()")`}
         <p>But if we go more inside, we will notice in the following code snippet we need to thenable to the whole chunk object not just its data</p>
          <div className="w-full border-2 border-red-500/30 rounded-lg overflow-hidden bg-zinc-900 my-6">
           <img
-            src="/writeup-images/react2shell/chunk_then.png"
+            src={assetPath('/writeup-images/react2shell/chunk_then.png')}
             alt="Home page"
             className="w-full h-auto object-cover"
           />
